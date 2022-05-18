@@ -18,7 +18,7 @@ btn = Button(root, text='start!')
 btn.pack()
 
 def getorigin(eventorigin):
-    global x, y
+    global x, y, counter
     x = eventorigin.x
     y=eventorigin.y
     if 0<=x<=120 and 0<=y<=120:
@@ -33,7 +33,7 @@ def getorigin(eventorigin):
         canva.create_oval(150, 150, 210, 210, fill='#73C8B7')
     if 240<=x<=360 and 120<=y<=240:
         canva.create_oval(270, 150, 330, 210, fill='#73C8B7')
-    if 0<=x<=120 and 240<=y<=360:    #?
+    if 0<=x<=120 and 240<=y<=360:
         canva.create_oval(30, 270, 90, 330, fill='#73C8B7')
     if 120<=x<=240 and 240<=y<=360:
         canva.create_oval(150, 270, 210, 330, fill='#73C8B7')
